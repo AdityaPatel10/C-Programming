@@ -1,0 +1,17 @@
+#include <stdio.h>
+int Sum (int);
+int main ( )   {
+    int n = 87;
+    printf ("sum = %d", Sum (n));
+    return 0;
+}
+int Sum (int a)
+{
+    int sum = 0;
+    while (a != 0)
+    {
+        sum += a % 10;
+        a = a/10;
+    }
+    return sum;
+}

@@ -1,0 +1,1 @@
+1.) Structure members are accessed using dot (.) operator. 

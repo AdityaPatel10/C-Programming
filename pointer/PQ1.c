@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()   {
+    int x, *ptr;
+    ptr = &x;
+    *ptr = 0;   // x = 0
+
+    printf ("x = %d\n", x);
+    printf ("*ptr = %d\n", *ptr);
+
+    *ptr += 8;
+
+    printf ("x = %d\n", x);
+    printf ("*ptr = %d\n", *ptr);
+    
+    (*ptr)++;
+
+    printf ("x = %d\n", x);
+    printf ("*ptr = %d\n", *ptr);
+    return 0;
+} 

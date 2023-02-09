@@ -1,0 +1,28 @@
+
+
+//RETURN STRUCTURE FROM A FUNCTION
+
+
+#include <stdio.h>
+struct wage {
+    char name [6];
+    int rs;
+};
+struct wage employee ( ) ;
+int main ( )  {
+    struct wage e;
+    e = employee ( );
+    printf ("Wage details of employee:-\n");
+    printf ("Name : %s\n", e.name);
+    printf ("Wage : %d\n", e.rs);
+    return 0;
+}
+struct wage employee ( )
+{
+    struct wage e1;
+    printf ("Enter the name of the employee : ");
+    scanf ("%s", e1.name);
+    printf ("Enter the wage : ");
+    scanf ("%d", &e1.rs);
+    return e1;
+}

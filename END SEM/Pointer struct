@@ -1,0 +1,15 @@
+#include <stdio.h>
+struct team
+{
+    char name[10];
+    int mem;
+    char cap[10];
+};
+int main ()  {
+    struct team t1 = {"INDIA" , 11 , "DHONI"};
+    struct team *sptr = &t1;
+    printf ("%s\n", (*sptr).name);
+    printf ("%d\n", (*sptr).mem);
+    printf ("%s\n   ", sptr->cap);
+    return 0;
+}
